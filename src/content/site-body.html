@@ -21,12 +21,15 @@
 
       <nav class="nav" id="primary-nav" aria-label="Navigazione principale">
         <a href="#servizi">Servizi</a>
-        <a href="#studio">Esperienza</a>
+        <a href="#metodo">Metodo</a>
+        <a href="#studio">Studio</a>
         <a href="#faq">FAQ</a>
+        <a href="#progetti">Progetti</a>
         <a href="#contatti">Contatti</a>
       </nav>
 
       <div class="site-header__actions">
+        <a class="btn btn--header" href="#contatti">Richiedi consulenza</a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Apri menu">
           <span class="menu-toggle__label">Menu</span>
           <span class="menu-toggle__lines" aria-hidden="true"><i></i><i></i></span>
@@ -50,6 +53,11 @@
           <span class="hero__line hero__line--sub">La tua casa è unica, rendila speciale</span>
         </h1>
         <p class="hero__intro">Progettazione di interni su misura, consulenza architettonica, product design</p>
+        <div class="hero__actions">
+          <a class="btn btn--solid-light" href="#contatti">Richiedi consulenza</a>
+          <a class="btn btn--light" href="#progetti">Guarda i progetti</a>
+        </div>
+        <p class="hero__place">Studio a Saluzzo (CN) — Via Spielberg 91</p>
       </div>
     </section>
 
@@ -131,9 +139,9 @@
         <div class="services__main">
           <h2 class="reveal" id="services-title">Cosa offre lo Studio</h2>
           <ol class="services__list">
-            <li class="services__item reveal"><span aria-hidden="true">01</span><h3>Progettazione di interni su misura</h3></li>
-            <li class="services__item reveal"><span aria-hidden="true">02</span><h3>Consulenza architettonica</h3></li>
-            <li class="services__item reveal"><span aria-hidden="true">03</span><h3>Product design</h3></li>
+            <li class="services__item reveal"><span aria-hidden="true">01</span><div><h3>Progettazione di interni su misura</h3><p class="services__desc">Dal rilievo al progetto esecutivo: distribuzione degli spazi, materiali, luce e arredi disegnati per la tua casa, una stanza o un'intera residenza.</p></div></li>
+            <li class="services__item reveal"><span aria-hidden="true">02</span><div><h3>Consulenza architettonica</h3><p class="services__desc">Un confronto tecnico per capire possibilità, vincoli e priorità prima di iniziare i lavori, con le competenze di un geometra abilitato.</p></div></li>
+            <li class="services__item reveal"><span aria-hidden="true">03</span><div><h3>Product design</h3><p class="services__desc">Arredi e dettagli progettati su misura quando il catalogo non basta: pezzi unici pensati per quello spazio.</p></div></li>
           </ol>
         </div>
 
@@ -152,6 +160,38 @@
 
       <div class="shell services__turn">
         <h3 class="reveal">Ma…</h3>
+      </div>
+    </section>
+
+    <section class="method section" id="metodo" aria-labelledby="method-title">
+      <div class="shell">
+        <div class="method__head">
+          <h2 class="reveal" id="method-title">Come lavoriamo</h2>
+          <p class="method__lead reveal">Un percorso chiaro, dalla prima idea al progetto finito.</p>
+        </div>
+        <ol class="method__list">
+          <li class="method__step reveal"><span aria-hidden="true">01</span><h3>Primo incontro</h3><p>Ascoltiamo esigenze, abitudini e budget, in studio o direttamente nello spazio da progettare.</p></li>
+          <li class="method__step reveal"><span aria-hidden="true">02</span><h3>Rilievo e concept</h3><p>Misuriamo lo spazio e definiamo la direzione: distribuzione, stile, materiali e palette.</p></li>
+          <li class="method__step reveal"><span aria-hidden="true">03</span><h3>Progetto</h3><p>Disegni, dettagli e scelte definitive, condivisi e rivisti insieme fino all'equilibrio giusto.</p></li>
+          <li class="method__step reveal"><span aria-hidden="true">04</span><h3>Realizzazione</h3><p>Coordinamento con le imprese e, grazie a 2d casa, supporto nello sviluppo dell'immobile.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="projects section" id="progetti" aria-labelledby="projects-title">
+      <div class="shell">
+        <div class="projects__head">
+          <h2 class="reveal" id="projects-title">Progetti</h2>
+          <p class="projects__lead reveal">Residenze complete o singoli ambienti: living, cucine, zone pranzo, studi.</p>
+        </div>
+        <div class="projects__grid">
+          <figure class="projects__item projects__item--tall reveal"><img src="/assets/living_legno_camino_divano.jpg" alt="Living con camino e boiserie in legno" width="1440" height="1799" loading="lazy" decoding="async"><figcaption>Living</figcaption></figure>
+          <figure class="projects__item reveal"><img src="/assets/dining_tavolo_lampade_sospese.jpg" alt="Zona pranzo con tavolo e lampade a sospensione" width="1440" height="1800" loading="lazy" decoding="async"><figcaption>Zona pranzo</figcaption></figure>
+          <figure class="projects__item reveal"><img src="/assets/soffitto_travi_legno_rosso.jpg" alt="Soffitto con travi in legno rosso" width="1440" height="1800" loading="lazy" decoding="async"><figcaption>Dettaglio soffitto</figcaption></figure>
+          <figure class="projects__item reveal"><img src="/assets/parete_pannelli_listelli_legno.jpg" alt="Parete rivestita con pannelli a listelli in legno" width="1440" height="1800" loading="lazy" decoding="async"><figcaption>Boiserie</figcaption></figure>
+          <figure class="projects__item reveal"><img src="/assets/dining_tavolo_legno_sedie.jpg" alt="Tavolo in legno con sedie" width="1440" height="1800" loading="lazy" decoding="async"><figcaption>Dining</figcaption></figure>
+          <figure class="projects__item projects__item--tall reveal"><img src="/assets/tavolo_legno_porta_listelli_sfondo.jpg" alt="Tavolo in legno con porta a listelli sullo sfondo" width="1440" height="1800" loading="lazy" decoding="async"><figcaption>Ingresso</figcaption></figure>
+        </div>
       </div>
     </section>
 
@@ -174,6 +214,11 @@
           </figure>
           <div class="studio__body">
             <p class="studio__intro reveal">Mi chiamo Lorenzo, Interior designer esperto nel settore con più di 10 anni di esperienza</p>
+            <ul class="credentials reveal">
+              <li><strong>IED Torino</strong><span>Diploma in Interior Design, 2013</span></li>
+              <li><strong>Geometra abilitato</strong><span>Competenze tecniche e di cantiere</span></li>
+              <li><strong>Pubblicato su INTERNI</strong><span>Progetti su riviste di settore</span></li>
+            </ul>
             <ol class="timeline">
               <li class="timeline__item reveal">
                 <div class="timeline__info">
@@ -292,6 +337,15 @@
     <section class="contact section" id="contatti" aria-labelledby="contact-title">
       <div class="shell">
         <h2 class="reveal" id="contact-title">Un progetto nasce da un’idea.</h2>
+        <div class="contact__grid">
+        <div class="contact__info reveal">
+          <p class="contact__lead">Raccontaci il tuo spazio: ti ricontatteremo per fissare una prima consulenza.</p>
+          <dl>
+            <div><dt>Studio</dt><dd>Via Spielberg 91<br>12037 Saluzzo (CN)</dd></div>
+            <div><dt>Ricevimento</dt><dd>Su appuntamento</dd></div>
+            <div><dt>Social</dt><dd><a href="https://www.instagram.com/lorenzovassallostudio/" target="_blank" rel="noopener noreferrer">Instagram</a> · <a href="https://www.linkedin.com/in/lorenzo-vassallo-20a97b71/" target="_blank" rel="noopener noreferrer">LinkedIn</a></dd></div>
+          </dl>
+        </div>
 
         <!-- Placeholder: form dimostrativo, nessun endpoint collegato. -->
         <form class="contact__form reveal" id="contact-form" novalidate>
@@ -307,18 +361,24 @@
             <label for="cf-message">Il tuo progetto</label>
             <textarea id="cf-message" name="messaggio" rows="2" required></textarea>
           </div>
-          <button class="btn btn--light" type="submit">Parliamo del tuo progetto</button>
+          <button class="btn btn--solid-light" type="submit">Richiedi consulenza</button>
           <p class="contact__status" id="contact-status" role="status" aria-live="polite"></p>
         </form>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="shell site-footer__inner">
-      <a class="brand brand--footer" href="#hero">Lorenzo Vassallo <span>Studio</span></a>
+      <div class="site-footer__brand">
+        <a class="brand brand--footer" href="#hero">Lorenzo Vassallo <span>Studio</span></a>
+        <p>Interior design · Via Spielberg 91, Saluzzo (CN)</p>
+      </div>
       <nav aria-label="Navigazione di piede">
         <a href="#servizi">Servizi</a>
+        <a href="#metodo">Metodo</a>
+        <a href="#progetti">Progetti</a>
         <a href="#studio">Lo studio</a>
         <a href="#faq">FAQ</a>
         <a href="#contatti">Contatti</a>
@@ -332,6 +392,7 @@
         </a>
       </nav>
     </div>
+    <div class="shell site-footer__legal"><p>© 2026 Lorenzo Vassallo Studio</p></div>
   </footer>
 
   

@@ -28,3 +28,5 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- The landing page is the imported static site: markup in src/content/site-body.html (rendered raw), styles in src/site.css, interactions in public/js/main.js — keeps the original design 1:1.

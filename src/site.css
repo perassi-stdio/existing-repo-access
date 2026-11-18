@@ -11,7 +11,7 @@
   --paper-2: #EFECE5;
   --ink: #151514;
   --ink-2: #2B2A27;
-  --muted: #8A877F;
+  --muted: #6F6C65;
 
   --hair: rgba(21, 21, 20, .16);
   --hair-light: rgba(247, 245, 240, .22);
@@ -691,58 +691,95 @@ section[id] { scroll-margin-top: 96px; }
 
 /* ---------- Smartphone ---------- */
 @media (max-width: 680px) {
-  :root { --section-y: clamp(72px, 18vw, 104px); --edge: 20px; }
+  :root { --section-y: clamp(72px, 18vw, 104px); --edge: 24px; }
   body { font-size: 15px; }
+  h1, h2 { text-wrap: balance; }
+  p { text-wrap: pretty; }
   .site-header__inner { min-height: 68px; }
   section[id] { scroll-margin-top: 72px; }
 
-  .hero__inner { padding-block: 110px 80px; }
-  .hero__title { font-size: clamp(2rem, 9vw, 2.8rem); max-width: 16ch; }
-  .hero__actions { flex-direction: column; align-items: stretch; max-width: 320px; margin-inline: auto; }
+  .hero__inner { padding-block: 104px 64px; }
+  .hero__media::after { background: rgba(15, 15, 14, .46); }
+  .hero__title { font-size: clamp(1.75rem, 7.4vw, 2.1rem); max-width: 22ch; line-height: 1.09; }
+  .hero__line--sub { margin-top: 14px; }
+  .hero__intro { margin-top: 22px; max-width: 34ch; font-size: .95rem; line-height: 1.55; color: rgba(247, 245, 240, .9); }
+  .hero__actions { flex-direction: column; align-items: stretch; max-width: 300px; margin-inline: auto; margin-top: 26px; gap: 10px; }
+  .hero__place { margin-top: 24px; font-size: .62rem; letter-spacing: .16em; color: rgba(247, 245, 240, .86); }
 
-  .problem__content h2 { font-size: clamp(1.8rem, 7.4vw, 2.3rem); }
-  .problem__lead { font-size: 1.2rem; }
-  .problem__question { margin-left: 0; font-size: 1.5rem; }
+  .problem__content h2 { font-size: clamp(1.7rem, 6.6vw, 2.05rem); max-width: 24ch; }
+  .problem__lead { margin-top: 30px; font-size: 1.1rem; }
+  .problem__question { margin-left: 0; margin-top: 36px; font-size: 1.35rem; }
 
-  .story__intro { margin: 0 0 40px; }
-  .story__intro h2 { font-size: clamp(2.4rem, 11vw, 3.2rem); }
+  .story__intro { margin: 0 0 32px; }
+  .story__intro h2 { font-size: clamp(1.9rem, 8vw, 2.4rem); }
   .story__media { max-width: none; }
   .story__frame { aspect-ratio: 4 / 3; height: auto; }
-  .story__item h3 { font-size: 1.7rem; }
+  .story__item { padding-block: 30px; }
+  .story__item h3 { font-size: 1.5rem; }
+  .story__text { font-size: .95rem; }
 
   .styles__copy h2, .services__main h2, .partner__content h2, .studio h2,
-  .method__head h2, .projects__head h2 { font-size: clamp(2rem, 9vw, 2.6rem); }
-  .styles__pair { grid-template-columns: 1fr; gap: 40px; }
+  .method__head h2, .projects__head h2 { font-size: clamp(1.85rem, 8vw, 2.3rem); }
+  .styles__sub { margin-top: 18px; font-size: 1rem; }
+  .styles__pair { grid-template-columns: 1fr; gap: 32px; margin-top: 36px; }
+  .styles__plate figcaption { margin-top: 12px; }
 
   .services__aside { grid-template-columns: 1fr; gap: 28px; }
   .services__figure { max-width: none; }
-  .services__item { flex-direction: column; gap: 10px; }
-  .services__item h3 { font-size: 1.6rem; }
+  .services__list { margin-top: 32px; }
+  .services__item { flex-direction: column; gap: 10px; padding-block: 22px; }
+  .services__item h3 { font-size: 1.45rem; }
+  .services__desc { margin-top: 10px; font-size: .95rem; }
+  .services__note { margin-top: 28px; }
+  .services__turn h3 { font-size: 3.2rem; }
 
-  .method__list { grid-template-columns: 1fr; gap: 34px; }
+  .method__list { grid-template-columns: 1fr; gap: 26px; margin-top: 32px; }
+  .method__step h3 { font-size: 1.3rem; }
+  .method__step p { font-size: .92rem; }
 
-  .projects__grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+  .projects__grid { grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 32px; }
+  .projects__item:first-child { grid-column: 1 / -1; aspect-ratio: 4 / 3; }
   .projects__item figcaption { font-size: .55rem; padding: 7px 9px; }
 
-  .partner__quote { font-size: 1.35rem; padding-left: 18px; }
+  .partner__quote { font-size: 1.12rem; line-height: 1.5; margin-top: 40px; padding-left: 16px; }
+  .partner__lead { margin-top: 20px; font-size: .95rem; color: rgba(247, 245, 240, .78); }
 
   .studio__figure { max-width: none; aspect-ratio: 4 / 3; }
-  .studio__intro { font-size: 1.5rem; }
-  .timeline__item { grid-template-columns: 1fr; gap: 6px; }
+  .studio__grid { margin-top: 32px; gap: 32px; }
+  .studio__intro { font-size: 1.28rem; }
+  .timeline { margin-top: 32px; }
+  .timeline__item { grid-template-columns: 1fr; gap: 6px; padding-block: 18px; }
+  .timeline__role { font-size: 1.15rem; }
+  .credentials { margin-top: 28px; }
 
   .texture-band { height: 300px; }
 
-  .faq__head h2 { font-size: 2rem; }
-  .faq__group-title { grid-template-columns: minmax(0, 1fr) auto; font-size: 1.3rem; }
+  .faq__head { margin-bottom: 26px; }
+  .faq__head h2 { font-size: 1.85rem; }
+  .faq__groups { gap: 24px; }
+  .faq__group-title { grid-template-columns: minmax(0, 1fr) auto; font-size: 1.2rem; min-height: 44px; }
   .faq__group-title::before { display: none; }
+  .faq__group-title::after, .faq__q::after { font-size: 1.15em; color: var(--ink); }
   .faq__item { grid-template-columns: 1fr; gap: 6px; }
-  .faq__q { font-size: 1.2rem; }
+  .faq__q { font-size: 1.1rem; }
+  .faq__a { font-size: .95rem; }
 
-  .contact h2 { font-size: clamp(2.6rem, 12vw, 3.4rem); }
-  .contact__form { grid-template-columns: 1fr; }
+  .contact h2 { font-size: clamp(2rem, 8.5vw, 2.6rem); }
+  .contact__form { grid-template-columns: 1fr; margin-top: 36px; gap: 22px; }
   .contact__form .btn { justify-self: stretch; }
+  .field { gap: 8px; }
+  .field label { font-size: .62rem; letter-spacing: .16em; opacity: .85; }
+  .field input, .field textarea { padding: 8px 0; }
+  .field textarea { resize: none; min-height: 96px; }
+  .contact__info dl { margin-top: 28px; gap: 16px; }
+  .contact__info dt { opacity: .8; }
+  .contact__lead { font-size: 1.2rem; }
+  .contact { padding-bottom: 40px; }
 
+  .site-footer { padding-block: 32px; }
   .site-footer__inner { flex-direction: column; align-items: flex-start; }
+  .site-footer nav { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 20px; }
+  .site-footer__legal { margin-top: 20px; padding-top: 16px; }
 }
 
 
